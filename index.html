@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+     <script>
+            // 1. The variables name, surname, age contain your personal data.
+            var name = "Marcin";
+            var surname = "Stolarczyk";
+            var age = 23;
+
+            // 2. In the index.html , write a JavaScript program to display your data both in a popup window and in
+            // the console.
+            // window.alert(name+" "+surname);
+
+            // 3. Try to display your name and surname in separate lines.
+
+            // 3. In the index.html document, write a JavaScript program to display your data both in a popup window
+            // and in the console.
+            // window.alert(name+" "+surname+", "+age+" lata");
+            // console.log(name+" "+surname+", "+age+" lata");
+
+            // 3. In the condition.html document, write a JavaScript program to display your data in the console provided
+            // you pressed Ok button in the „confirm” popup window.
+            // if (confirm("load data?"))
+            // console.log(name+" "+surname+", "+age+" lata");
+            //
+            // 1. Write a JavaScript program where the program takes a random integer between 1 to 5, the user is then
+            // prompted to input a guess number. If the user input matches with guess number, the program will
+            // display a message "Good Work" otherwise display a message "Sorry".
+            //     var randomm = Math.floor(Math.random() * 5) + 1;
+            //     var guesss = prompt("Please enter value","value");
+            //     if(randomm == guesss) {
+            //         window.alert("Good work");
+            //     }else {
+            //         window.alert("Sorry");
+            //     }
+
+            // 1. Write a JavaScript program to construct the following pattern:
+            // *
+            // * *
+            // * * *
+            // * * * *
+            // * * * * *
+            // 2. Use a for loop and a repeat string method.
+            // 3. Complete pattern.html with a JavaScript code.
+            // 4. Display results in the console.
+            // var i = 0;
+            // var str = "*";
+            // for(i=1;i<6;i++) {
+            //     console.log(str.repeat(i));
+            // }
+            //
+            // 1. An array of 5 elements includes random integers in the range of 1 to 5. To create a random number, use
+            // Math.random() function.
+            // 2. Check whether the array is sorted, i.e. each element of the array is not smaller than its predecessor.
+            // 3. Complete array.html with a JavaScript code.
+            // 4. Display in the console the array elements and information whether the array is sorted.
+            // var i = 0;
+            // var arrayy = [];
+            // for(i=1;i<6;i++) {
+            //     var randomm = Math.floor(Math.random() * 5) + 1;
+            //     arrayy.push(randomm)
+            // }
+            // arrayy.sort();
+            // console.log(arrayy);
+        </script>
+    </body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Speech generator</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Speech generator :-)</h1>-->
+<!--<button onclick="n();">Create a speech</button>-->
+
+<!--<script>-->
+<!--    function createSpeech() {-->
+<!--        //each array consists of 10 elements-->
+<!--        var first = [	'Koleżanki i koledzy,', 'Z drugiej strony', 'Podobnie', 'Nie zapominajmy jednak, że',-->
+<!--            'W ten sposób', 'Praktyka dnia codziennego dowodzi, że',-->
+<!--            'Wagi i znaczenia tych problemów nie trzeba szerzej uzasadniać, ponieważ',-->
+<!--            'Różnorakie i bogate doświadczenia', 'Troska organizacji, a szczególnie',-->
+<!--            'Wyższe założenia ideowe, a także'-->
+<!--        ];-->
+<!--        var second = [	'realizacja nakreślonych zadań programowych', 'zakres i miejsce szkolenia kadr',-->
+<!--            'stały wzrost ilości i zakres naszej aktywności', 'aktualna struktura organizacji',-->
+<!--            'nowy model działalności organizacyjnej', 'dalszy rozwój różnych form działalności',-->
+<!--            'stałe zabezpieczenie informacyjno-propagandowe naszej działalności',-->
+<!--            'wzmocnienie i rozwijanie struktur', 'konsultacja z szerokim aktywem',-->
+<!--            'rozpoczęcie powszechnej akcji kształtowania podstaw'-->
+<!--        ];-->
+<!--        var third = [	'zmusza nas do przeanalizowania', 'spełnia istotną rolę w kształtowaniu',-->
+<!--            'wymaga sprecyzowania i określenia', 'pomaga w przygotowaniu i realizacji',-->
+<!--            'zabezpiecza udział szerokiej grupie w kształtowaniu', 'spełnia ważne zadania w wypracowaniu',-->
+<!--            'umożliwia w większym stopniu tworzenie', 'powoduje docenianie wagi',-->
+<!--            'przedstawia interesującą próbę sprawdzenia', 'pociąga za sobą proces wdrażania i unowocześnienia'-->
+<!--        ];-->
+<!--        var fourth = [ 	'istniejących warunków administracyjno-finansowych.', 'dalszych kierunków rozwoju.',-->
+<!--            'systemu powszechnego uczestnictwa.', 'postaw uczestników wobec zadań stawianych przez ogranizacje.',-->
+<!--            'nowych propozycji.', 'kierunków postępowego wychowania.', 'systemu szkolenia kadr odpowiadającego potrzebom.',-->
+<!--            'odpowiednich warunków aktywizacji.', 'modelu rozwoju.', 'form oddziaływania.'-->
+<!--        ];-->
+
+<!--        // 1. Write a JavaScript program to write/generate a speech.-->
+<!--        // 2. Use speech.html with speech text excerpts.-->
+<!--        // 3. To create a sentence, take any text from the first array, any text from the second one, any text from the-->
+<!--        // third one, and finally, any text from the fourth array.-->
+<!--        // 4. Complete the n() function to create a random number for selecting text from arrays. Use Math.random()-->
+<!--        // 5. Display your speech, containing 5 sentences, in the console.-->
+<!--        var randomSpeech = first[Math.floor(Math.random() * first.length)]+" "-->
+<!--            +second[Math.floor(Math.random() * second.length)]+" "-->
+<!--            +third[Math.floor(Math.random() * third.length)]+" "-->
+<!--            +fourth[Math.floor(Math.random() * fourth.length)];-->
+<!--        return randomSpeech;-->
+<!--    }-->
+<!--    // returns random integer from 0 to 9-->
+<!--    function n() {-->
+<!--        var i = 0;-->
+<!--        for(i=1;i<6;i++) {-->
+<!--            console.log(createSpeech())-->
+<!--            if(i<6)-->
+<!--                console.log("-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--&lt;!&ndash;1. In the external.html, write a JavaScript program to display a current date in a popup window.&ndash;&gt;-->
+<!--&lt;!&ndash;2. Place a JavaScript code in the external file date.js&ndash;&gt;-->
+<!--&lt;!&ndash;3. In the current folder, create a folder ‘js’. Then put the script file in that folder.&ndash;&gt;-->
+
+<!--&lt;!&ndash;1. In the events.html, write a JavaScript program to display a message in the console ‘You clicked the&ndash;&gt;-->
+<!--&lt;!&ndash;button X times’.&ndash;&gt;-->
+<!--&lt;!&ndash;2. Put a code in an external script.&ndash;&gt;-->
+<!--&lt;!&ndash;3. Create a function and a button event.&ndash;&gt;-->
+<!--&lt;!&ndash;4. Display a message in the console each time the user clicks on the button.&ndash;&gt;-->
+<!--&lt;!&ndash;5. Replace X with the number of clicks.&ndash;&gt;-->
+<!--&lt;!&ndash;6. Check the results in the Chrome DevTools.&ndash;&gt;-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--&lt;!&ndash;    <script src="js/date.js"></script>&ndash;&gt;-->
+<!--    <script src="js/clickss.js"></script>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--    <button type="button" onClick="onClick()">Click me</button>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--===========================================OOP==========================================================-->
+
+<!--<!DOCTYPE html>-->
+<!--&lt;!&ndash;Complete the movie.html document. Display all movie details on the console.&ndash;&gt;-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Display movie</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Display movie</h1>-->
+<!--<script>-->
+<!--    var myFavMovie = {-->
+<!--        title: 		'The Shawshank Redemption',-->
+<!--        genre: 		'drama',-->
+<!--        year:		1994,-->
+<!--        database:	'http://www.imdb.com/title/tt0111161/',-->
+<!--        specs:		{budget:25000000, language:'English', digitalSound:true},-->
+<!--        stars: 		['Tim Robbins', 'Morgan Freeman', 'Bob Gunton']-->
+<!--    };-->
+<!--    console.log("## My favourite film ##");-->
+<!--    console.log("Title: ", myFavMovie.title);-->
+<!--    console.log("Genre: ", myFavMovie.genre);-->
+<!--    console.log("Year: ", myFavMovie.year);-->
+<!--    console.log("Database: ", myFavMovie.database);-->
+<!--    console.log("Specs: "+"budget: "+myFavMovie.specs.budget+", language:"+myFavMovie.specs.language+-->
+<!--        ", digital sound: "+myFavMovie.specs.digitalSound);-->
+<!--    console.log("Stars: ", myFavMovie.stars[0]+", "+myFavMovie.stars[1]+", "+myFavMovie.stars[2]);-->
+<!--    // ...-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--&lt;!&ndash;1. Open the mobile.html document. Then create an object describing your mobile phone.&ndash;&gt;-->
+<!--&lt;!&ndash;2. The object should consist of at least five properties of different types (string, number, boolean, array,&ndash;&gt;-->
+<!--&lt;!&ndash;object).&ndash;&gt;-->
+<!--&lt;!&ndash;3. Add a button and display the mobile phone description in a popup window after clicking on the button&ndash;&gt;-->
+<!--<head>-->
+<!--    <title>Create mobile phone</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Create mobile phone</h1>-->
+<!--<button type="button" onclick="displayPhone()">Display phone</button>-->
+<!--<script>-->
+<!--    function displayPhone() {-->
+<!--        var myPhone = {-->
+<!--            brand: "Huawei P9",-->
+<!--            price: 20000,-->
+<!--            specs: {camera: 200, etui: true},-->
+<!--            details: ["white color"]-->
+<!--        };-->
+<!--        window.alert(myPhone.brand+", price: "+myPhone.price+", specs: camera: "+myPhone.specs.camera+-->
+<!--        ", etui: "+myPhone.specs.etui+", details: "+myPhone.details[0]);-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--&lt;!&ndash;Complete the JavaScript code in the bmi.html document to calculate BMI (Body Mass Index).&ndash;&gt;-->
+<!--<head>-->
+<!--    <title>BMI</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>BMI calculator</h1>-->
+<!--<p>Insert weight</p>-->
+<!--<input type="text" id="weight" value="weight">-->
+<!--<br>-->
+<!--<p>Insert height</p>-->
+<!--<input type="text" id="height" value="height">-->
+<!--<br><br/>-->
+<!--<button type="button" onclick="BMICalc()">Run BMI calculator</button>-->
+
+<!--<script>-->
+<!--    function BMICalc(){-->
+<!--        var BMI = {-->
+<!--            weight: null,-->
+<!--            height: null,-->
+<!--            enterData: function(){-->
+<!--                weight = document.getElementById("weight").value;-->
+<!--                height = document.getElementById("height").value;-->
+<!--            },-->
+<!--            calculate: function(){-->
+<!--                var secondPowerHeight = Math.pow(height,2);-->
+<!--                var bmi = weight/secondPowerHeight;-->
+<!--                return bmi;-->
+<!--            },-->
+<!--            display: function(){-->
+<!--                window.alert("Twoje BMI jest rowne: "+BMI.calculate());-->
+<!--            }-->
+<!--        }-->
+<!--        BMI.enterData();-->
+<!--        // BMI.calculate();-->
+<!--        BMI.display();-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--&lt;!&ndash;Complete the JavaScript code in the array.html document.&ndash;&gt;-->
+<!--<head>-->
+<!--    <title>Create methods</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Create methods</h1>-->
+<!--<script>-->
+<!--    var myArray = {-->
+<!--        arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],-->
+<!--        min: function(){-->
+<!--            // maximum value (sort the arr and take the last value, use a built-in function)-->
+<!--        },-->
+<!--        max: function(){},		// look at the min method comment-->
+<!--        avg: function(){},		// avarage value-->
+<!--        lth: function(val){}	// the number of arr values less than 'val'-->
+<!--    };-->
+
+<!--    // display results (min,max,avg,lth) in the console-->
+<!--    // ...-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--&lt;!&ndash;1. Based on the list of books below, create in the books.html an array of five objects, where each object&ndash;&gt;-->
+<!--&lt;!&ndash;describes a single book.&ndash;&gt;-->
+<!--&lt;!&ndash;2. Iterate through the array of books and display in the console the details of books in paperback.&ndash;&gt;-->
+<!--<head>-->
+<!--    <title>Display books list</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Display books list</h1>-->
+<!--<script>-->
+<!--    var books = [-->
+<!--        bookOne = {-->
+<!--            id: 1,-->
+<!--            title: "The Return of Duck and Goose",-->
+<!--            author: "Sir Piggy",-->
+<!--            format: "paperback",-->
+<!--            price: 19.99-->
+<!--        },-->
+<!--        bookTwo = {-->
+<!--            id: 2,-->
+<!--            title: "The Adventures of Duck and Goose",-->
+<!--            author: "D. Cow",-->
+<!--            format: "hardback",-->
+<!--            price: 18.99-->
+<!--        },-->
+<!--        bookThree = {-->
+<!--            id: 3,-->
+<!--            title: "My Friend is a Duck",-->
+<!--            author: "A. Parrot",-->
+<!--            format: "paperback",-->
+<!--            price: 14.99-->
+<!--        },-->
+<!--        bookFour = {-->
+<!--            id: 4,-->
+<!--            title: "‘Duck and Goose’ Cheat Sheet for Students",-->
+<!--            author: "Polly Parrot",-->
+<!--            format: "paperback",-->
+<!--            price: 5.99-->
+<!--        },-->
+<!--        bookFive = {-->
+<!--            id: 5,-->
+<!--            title: "‘Duck and Goose’: an allegory for modern times?",-->
+<!--            author: "Bor Ing",-->
+<!--            format: "ebook",-->
+<!--            price: 59.99-->
+<!--        }-->
+<!--    ]-->
+<!--    var i = 0;-->
+<!--    for(i;i<books.length;i++) {-->
+<!--        if(books[i].format == "paperback") {-->
+<!--            console.log("book id: "+books[i].id);-->
+<!--            console.log("book title: "+books[i].title);-->
+<!--            console.log("book author: "+books[i].author);-->
+<!--            console.log("book format: "+books[i].format);-->
+<!--            console.log("book price: "+books[i].price);-->
+<!--            console.log("==================================")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--&lt;!&ndash;1. In the forsale.html document, create a constructor function House with the following properties and methods:&ndash;&gt;-->
+<!--&lt;!&ndash;• bedrooms (the number of bedrooms)&ndash;&gt;-->
+<!--&lt;!&ndash;• facilities (an array of house facilities, eg. [’garden’,’garage’,’swimming pool’])&ndash;&gt;-->
+<!--&lt;!&ndash;• price&ndash;&gt;-->
+<!--&lt;!&ndash;• address (an object of street, city)&ndash;&gt;-->
+<!--&lt;!&ndash;• phone (eg. 555 222 111)&ndash;&gt;-->
+<!--&lt;!&ndash;• changePrice(newPrice){…}&ndash;&gt;-->
+<!--&lt;!&ndash;• addFacility(newFacility){…}&ndash;&gt;-->
+<!--&lt;!&ndash;• description() { returns a string containing a full house description, i.e. bedroom, facilities, price, address)}&ndash;&gt;-->
+<!--&lt;!&ndash;2. Then use the constructor function to create a collection of five houses.&ndash;&gt;-->
+<!--&lt;!&ndash;3. Display the house details in the console (use the description method and a loop).&ndash;&gt;-->
+<!--&lt;!&ndash;4. Change a price of two houses and add at least one facility in three houses).&ndash;&gt;-->
+<!--&lt;!&ndash;5. Display the house details in the console.&ndash;&gt;-->
+<!--<head>-->
+<!--    <title>Houses for sale</title>-->
+<!--    <meta charset="UTF-8">-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Houses for sale</h1>-->
+<!--<p id="demo"></p>-->
+<!--<script>-->
+<!--    function House(bedrooms, facilities, price, address, phone) {-->
+<!--        this.bedrooms = bedrooms;-->
+<!--        this.facilities = facilities;-->
+<!--        this.price = price;-->
+<!--        this.address = address;-->
+<!--        this.phone = phone;-->
+<!--        this.description = function () {-->
+<!--            return ("bedrooms: "+bedrooms+", facilities: "+facilities+", price: "+price+", address: "+address);-->
+<!--        }-->
+<!--        this.changePrice = function (newPrice) {-->
+<!--            price = newPrice;-->
+<!--        }-->
+<!--        this.addFacility = function(newFacility) {-->
+<!--            facilities.push(newFacility);-->
+<!--        }-->
+<!--    }-->
+<!--    var houses = [-->
+<!--        houseOne = new House(3,["pool", " garage"], 1334, "Dietla 14, Kraków", 4543434454545),-->
+<!--        houseTwo = new House(3,["garden", " pool", " garage"], 1334344334, "Starowiślna 6/4, Kraków", 454454545),-->
+<!--        houseThree = new House(3,["garden", " pool", " garage"], 133333334, "Pszona 12, Kraków", 4543434454545)-->
+<!--    ]-->
+<!--    for(i = 0;i<houses.length;i++) {-->
+<!--        console.log(houses[i].description());-->
+<!--    }-->
+
+<!--    houses[2].addFacility(" playground");-->
+<!--    houses[0].changePrice(12345);-->
+<!--    for(i = 0;i<houses.length;i++) {-->
+<!--        console.log(houses[i].description());-->
+<!--    }-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--==========================DOM================================================================-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create DOM elements</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h3 id="demo" onmouseover="changeText()" onmouseout="changeBack()">Sticks and stones may break my bones, but words will
+    never harm me.</h3>
+<script>
+    // a JavaScript code here ...
+    var translated = "Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią"
+    var reTranslated = "Sticks and stones may break my bones, but words will"
+    function changeText() {
+        document.getElementById("demo").innerHTML = translated
+    }
+    function changeBack() {
+        document.getElementById("demo").innerHTML = reTranslated
+    }
+
+    // Translation:
+    //
+
+</script>
+</body>
+</html>
+
+1. Open the alter.html document.
+2. Create a JavaScript program in which:
+• After clicking on the song title, the Part 2 is to be added at the end of the song title
+• After clicking on the band name, the band description is to be displayed below the lyrics
+• After clicking on the lyrics, the text is to be displayed in italics
+• After double clicking on the page, the page background colour is to be changed to yellow
+• When you try to copy the part of the lyrics, the copyright message is to be displayed in a popup window
+• When you click on the visible band description, the band picture is to be displayed below the
+description (https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg);
+note: to display the band picture, create a JavaScript code to add an <img> element below the
+description paragraph (see JavaScript HTML DOM Elements (Nodes), HTML DOM setAttribute()
+Method)
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change colour</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div ondblclick="changeBackground()">
+    <h1 onclick="changeTitle()">Another Brick in the Wall</h1>
+    <h3 onclick="showDesc()">Pink Floyd</h3>
+    <p onclick="italy()" oncopy="kopia()">We don't need no education<br>
+        We don't need no thought control<br>
+        No dark sarcasm in the classroom<br>
+        Teachers leave them kids alone<br>
+        Hey! Teachers! Leave them kids alone<br>
+        All in all it's just another brick in the wall<br>
+        All in all you're just another brick in the wall</p>
+
+    <p style="visibility: hidden;" onclick="imagee()">Pink Floyd were an English rock band formed in London.<br>
+        They achieved international acclaim with their progressive<br>
+        and psychedelic music.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg" style="visibility: hidden">
+</div>
+
+<script>
+    function changeTitle() {
+        var title =  document.getElementsByTagName("h1")[0]
+        var text = document.createTextNode(" part one")
+        title.appendChild(text)
+    }
+    function changeBackground() {
+        document.body.style.backgroundColor = "yellow"
+    }
+    function italy() {
+        var str = document.getElementsByTagName("p")[0]
+        str.italics();
+    }
+    function imagee() {
+        document.getElementsByTagName("img")[0].setAttribute("style", "visibility: visible")
+    }
+    function showDesc() {
+        document.getElementsByTagName("p")[1].setAttribute("style","visibility:visible")
+    }
+    function kopia() {
+        window.alert("copyrights")
+    }
+    // a JavaScript code here ...
+
+
+</script>
+</body>
+</html>
