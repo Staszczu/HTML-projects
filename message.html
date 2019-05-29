@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The HTML5 Herald</title>
+</head>
+<body>
+<div >
+    <h3 onmouseover="colorr()" onmouseout="colorBack()">Paragraf1</h3>
+    <h3 ondblclick="znika()">Paragraf2</h3>
+    <input type="text" value="insert here">
+    <br/>
+    <input onclick="reverseLength()" type="submit" value="press">
+    <p></p>
+    <p></p>
+</div>
+
+<script>
+    function colorr() {
+        document.getElementsByTagName('h3')[0].setAttribute("style", "color: red")
+    }
+    function colorBack() {
+        document.getElementsByTagName('h3')[0].setAttribute("style", "color: black")
+    }
+    function znika() {
+        document.getElementsByTagName('h3')[1].setAttribute("style", "visibility: hidden")
+    }
+        var clicks = 0;
+    function reverseLength() {
+        var wartosc = document.getElementsByTagName('input')[0].value
+        document.getElementsByTagName('p')[0].innerHTML = wartosc.split('').reverse().join('')
+        document.getElementsByTagName('p')[1].innerHTML = wartosc.length
+        var paragraf = document.getElementsByTagName('h3')[0]
+        var dziecko = document.createTextNode(" dupa")
+        paragraf.appendChild(dziecko)
+        clicks += document.getElementsByTagName('p')[1].innerHTML = wartosc.length
+        console.log(clicks)
+        var dd = "dupa".split('')
+        for(var i = 0; i<dd.length; i++) {
+            console.log(dd[i])
+        }
+    }
+
+</script>
+</body>
+</html>
