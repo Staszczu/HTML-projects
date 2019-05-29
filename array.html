@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create methods</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Create methods</h1>
+		<script>
+			var myArray = {
+					arr: [3,4,76,1,5,787,33,76,1,99,45,235,53,23],
+					min: function(){
+                        arr.sort();
+                        return arr[13];
+                        console.log(myArray.min());
+						// maximum value (sort the arr and take the last value, use a built-in function)
+					},		
+					max: function(){
+                        arr.sort();
+                        return arr[0];
+                    },		// look at the min method comment
+					avg: function(){
+                        arr.sort();
+                        var x = (arr[13] + arr[0])/2;
+                        return x;
+                    },		// avarage value
+					lth: function(val){}	// the number of arr values less than 'val'
+                   
+                    console.log(myArray.min());
+                };
+            
+            
+			// display results (min,max,avg,lth) in the console
+			// ...
+		</script>
+	</body>
+</html>

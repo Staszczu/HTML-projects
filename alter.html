@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change colour</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div ondblclick="changeBackground()">
+    <h1 onclick="changeTitle()">Another Brick in the Wall</h1>
+    <h3 onclick="showDesc()">Pink Floyd</h3>
+    <p onclick="italy()" oncopy="kopia()">We don't need no education<br>
+        We don't need no thought control<br>
+        No dark sarcasm in the classroom<br>
+        Teachers leave them kids alone<br>
+        Hey! Teachers! Leave them kids alone<br>
+        All in all it's just another brick in the wall<br>
+        All in all you're just another brick in the wall</p>
+
+    <p style="visibility: hidden;" onclick="imagee()">Pink Floyd were an English rock band formed in London.<br>
+        They achieved international acclaim with their progressive<br>
+        and psychedelic music.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Pink_Floyd_-_all_members.jpg" style="visibility: hidden">
+</div>
+
+<script>
+    function changeTitle() {
+        var title =  document.getElementsByTagName("h1")[0]
+        var text = document.createTextNode(" part one")
+        title.appendChild(text)
+    }
+    function changeBackground() {
+        document.body.style.backgroundColor = "yellow"
+    }
+    function italy() {
+        var str = document.getElementsByTagName("p")[0]
+        str.italics();
+    }
+    function imagee() {
+        document.getElementsByTagName("img")[0].setAttribute("style", "visibility: visible")
+    }
+    function showDesc() {
+        document.getElementsByTagName("p")[1].setAttribute("style","visibility:visible")
+    }
+    function kopia() {
+        window.alert("copyrights")
+    }
+    // a JavaScript code here ...
+
+
+</script>
+</body>
+</html>
