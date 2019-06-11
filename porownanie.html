@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The HTML5 Herald</title>
+</head>
+<body>
+<div >
+    <h3 onmouseover = "colorr()" onmouseout = "colorBack()">Paragraf1</h3>
+
+    <h3 ondblclick = "znika()">Paragraf2</h3>
+   
+   
+    <input type="text" value="insert here">
+    <input type="text" value="insert here">
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo"></p>
+       
+    
+    
+</div>
+
+<script >
+
+        function colorr(){
+            document.getElementsByTagName('h3')[0].setAttribute("style", "color: red")
+
+        }
+
+        function colorBack(){
+            document.getElementsByTagName('h3')[0].setAttribute("style", "color: black")
+        }
+
+        function znika(){
+
+            document.getElementsByTagName('h3')[1].setAttribute("style", "visibility: hidden")
+        }
+        function myFunction(){
+
+            var wartosc = parseInt(document.getElementsByTagName('input')[0].value)
+            var wartosc2 = parseInt(document.getElementsByTagName('input')[1].value)
+            
+            if(wartosc > wartosc2){
+                document.getElementById("demo").innerHTML = "Pierwsza";
+            }else{
+                document.getElementById("demo").innerHTML = "Druga";
+            }
+            
+        }
+        
+    
+</script>
+</body>
+</html>
